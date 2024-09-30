@@ -2,3 +2,43 @@ body {
   background: black;
   color: white;
 }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  width: 310px;
+  margin: 10px auto;
+  background: white;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: black;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.square.vacant:hover {
+  background: rgb(99, 99, 99);
+}
+
+.header, .message, .record, .extras {
+  text-align: center;
+}
+
+.header {
+  margin: 20px 0;
+}
+
+.new-game {
+  width: 200px;
+  background: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
